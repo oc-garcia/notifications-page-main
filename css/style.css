@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very_light_grayish_blue: hsl(210, 60%, 98%);
+  --Light_grayish_blue_1: hsl(211, 68%, 94%);
+  --Light_grayish_blue_2: hsl(205, 33%, 90%);
+  --Grayish_blue: hsl(219, 14%, 63%);
+  --Dark_grayish_blue: hsl(219, 12%, 42%);
+  --Very_dark_blue: hsl(224, 21%, 14%);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  background-color: var(--Grayish_blue);
+}
+
+.notification__container {
+  margin: 5%;
+  padding: 1rem;
+  background-color: var(--White);
+}
+
+.notification__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification__subcontainer {
+  display: flex;
+  align-items: center;
+}
+
+.notification__title {
+    color: var(--Very_dark_blue);
+    font-weight: 800;
+}
+
+#notification__counter {
+  background-color: var(--Very_dark_blue);
+  color: var(--White);
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+#notification__markAsRead{
+    border: none;
+    background-color: var(--White);
+    color: var(--Dark_grayish_blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
