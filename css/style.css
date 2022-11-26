@@ -24,6 +24,7 @@ body {
   margin: 5%;
   padding: 1rem;
   background-color: var(--White);
+  border-radius: 5px;
 }
 
 .notification__header {
@@ -51,10 +52,21 @@ body {
   font-weight: 800;
 }
 
-#notification__markAsRead{
+#notification__markAsRead {
     border: none;
     background-color: var(--White);
     color: var(--Dark_grayish_blue);
+}
+
+#notification__markAsRead:hover {
+cursor: pointer;
+}
+
+.notification__card-unread {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--Light_grayish_blue_1);
 }
 
 .attribution {
