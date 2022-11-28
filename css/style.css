@@ -67,6 +67,12 @@ cursor: pointer;
     padding: 0.5rem;
     border-radius: 5px;
     background-color: var(--Light_grayish_blue_1);
+    display: flex;
+}
+
+.notification__card-avatar {
+  width: 15%;
+  height: 15%;
 }
 
 .attribution {
