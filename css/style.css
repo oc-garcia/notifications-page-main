@@ -39,8 +39,8 @@ body {
 }
 
 .notification__title {
-    color: var(--Very_dark_blue);
-    font-weight: 800;
+  color: var(--Very_dark_blue);
+  font-weight: 800;
 }
 
 #notification__counter {
@@ -53,26 +53,37 @@ body {
 }
 
 #notification__markAsRead {
-    border: none;
-    background-color: var(--White);
-    color: var(--Dark_grayish_blue);
+  border: none;
+  background-color: var(--White);
+  color: var(--Dark_grayish_blue);
 }
 
 #notification__markAsRead:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 
 .notification__card-unread {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-    background-color: var(--Light_grayish_blue_1);
-    display: flex;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--Light_grayish_blue_1);
+  display: flex;
 }
 
 .notification__card-avatar {
   width: 15%;
   height: 15%;
+}
+
+.notification__text-container {
+  margin-left: 0.5rem;
+}
+
+.red-dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: var(--Red);
 }
 
 .attribution {
