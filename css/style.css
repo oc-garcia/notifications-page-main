@@ -70,6 +70,14 @@ body {
   display: flex;
 }
 
+.notification__card-read {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: var(--White);
+  display: flex;
+}
+
 .notification__card-avatar {
   width: 15%;
   height: 15%;
@@ -79,11 +87,27 @@ body {
   margin-left: 0.5rem;
 }
 
+.notification__card-time {
+  color: var(--Grayish_blue);
+  margin-top: 0.5rem;
+}
+
 .red-dot {
   height: 5px;
   width: 5px;
   border-radius: 50%;
   background-color: var(--Red);
+}
+
+.notification__card-message {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--Grayish_blue);
+}
+
+.notification__card-photo {
+  width: 15%;
+  height: 15%;
 }
 
 .attribution {
