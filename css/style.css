@@ -17,7 +17,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   width: 100%;
-  background-color: var(--Grayish_blue);
+  background-color: var(--Light_grayish_blue_2);
 }
 
 .notification__container {
@@ -44,7 +44,7 @@ body {
 }
 
 #notification__counter {
-  background-color: var(--Very_dark_blue);
+  background-color: var(--Blue);
   color: var(--White);
   margin-left: 0.5rem;
   padding: 0.2rem 0.5rem;
@@ -59,6 +59,11 @@ body {
 }
 
 #notification__markAsRead:hover {
+  color: var(--Blue);
+}
+
+#notification__markAsRead:hover,
+.notification__card-photo {
   cursor: pointer;
 }
 
@@ -68,6 +73,8 @@ body {
   border-radius: 5px;
   background-color: var(--Light_grayish_blue_1);
   display: flex;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .notification__card-read {
@@ -76,6 +83,7 @@ body {
   border-radius: 5px;
   background-color: var(--White);
   display: flex;
+  width: 100%;
 }
 
 .notification__card-avatar {
@@ -85,7 +93,12 @@ body {
 
 .notification__text-container {
   margin-left: 0.5rem;
+  position: relative;
+}
+
+.notification__card-text {
   display: inline;
+  color: var(--Dark_grayish_blue);
 }
 
 .notification__card-time {
@@ -98,6 +111,9 @@ body {
   width: 5px;
   border-radius: 50%;
   background-color: var(--Red);
+  position: absolute;
+  top: 0;
+  right: 5px;
 }
 
 .red-dot-read {
@@ -107,12 +123,18 @@ body {
 .notification__card-message {
   margin-top: 0.5rem;
   padding: 0.5rem;
-  border: 1px solid var(--Grayish_blue);
+  border: 1px solid var(--Light_grayish_blue_1);
+}
+
+.notification__card-message:hover {
+  cursor: pointer;
+  background-color: var(--Light_grayish_blue_1);
 }
 
 .notification__card-photo {
   width: 15%;
   height: 15%;
+  margin-left: 1rem;
 }
 
 .attribution {
@@ -121,4 +143,16 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.first__name {
+  font-weight: bold;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 600px) {
+  .notification__container {
+    margin: 5% 20%;
+    padding: 3rem;
+  }
 }
