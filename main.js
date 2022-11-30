@@ -2,7 +2,7 @@ let ntfCounter = document.getElementById("notification__counter");
 let markAll = document.getElementById("notification__markAsRead");
 
 let unread = document.querySelectorAll("div.notification__card-unread");
-let redDot = document.querySelectorAll("p.red-dot");
+let redDot = document.querySelectorAll("div.red-dot");
 
 let x = parseInt(unread.length);
 
